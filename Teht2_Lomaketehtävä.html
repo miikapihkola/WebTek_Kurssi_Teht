@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lomake</title>
+    <style>
+        body {
+            text-align: left;
+        }
+
+        span {
+            display: inline-block;
+            width: 525px;
+        }
+
+        fieldset,
+        textarea,
+        input {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>
+            <form>
+                <fieldset>
+                    <legend>Contact information:</legend>
+                    <table>
+                        <tr>
+                            <th><label for="fname">First name:</label></th>
+                            <th><input type="text" id="fname" name="fname" size="25"></th>
+                            <th>Preferred contact method:</th>
+                        </tr>
+                        <tr>
+                            <th><label for="fname">Last name:</label></th>
+                            <th><input type="text" id="lname" name="lname" size="25"></th>
+                            <th><input type="checkbox" id="prefEmail" name="prefEmail"><label for="prefEmail">
+                                    Email</label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><label for="email">Email:</label></th>
+                            <th><input type="text" id="email" name="email" size="25"></th>
+                            <th><input type="checkbox" id="prefTele" name="prefTele"><label for="prefTele">
+                                    Telephone</label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><label for="tele">Telephone:</label></th>
+                            <th><input type="text" id="tele" name="tele" size="25"></th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback:</legend>
+                    <label for="subject">Message subject: </label><input type="text" id="subject" name="subject"
+                        size="25"><br>
+                    <textarea name="message" rows="15" cols="55"></textarea><br>
+                    Attach a file: <input type="file" id="myFile" name="filename"><br>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </span>
+    </div>
+</body>
+
+</html>
