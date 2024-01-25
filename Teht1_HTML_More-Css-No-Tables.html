@@ -4,10 +4,31 @@
 <head>
     <title>Käytyjä kursseja</title>
     <style>
-        table,
-        th,
-        td {
-            text-align: left;
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        .col1 {
+            display: inline block;
+            width: 200px;
+        }
+
+        .col2 {
+            display: inline block;
+            width: 100px;
+        }
+
+        .col3 {
+            display: inline block;
+            width: 600px;
+        }
+
+        .col1,
+        .col2,
+        .col3 {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 5px;
@@ -34,53 +55,55 @@
     </ul>
     <hr>
     <h2>Taulukko keskeneräisistä opinnoista:</h2>
-    <table>
-        <tr>
-            <th>Kurssin nimi</th>
-            <th>opintopisteet</th>
-            <th>Lyhyt mielipide parin viikon opetuken perusteella</th>
-        </tr>
-        <tr>
-            <th>Ammatilline kasvu 1</th>
-            <th>1</th>
-            <th>Aika turha kurssi jos opinnot etenee hyvin</th>
-        </tr>
-        <tr>
-            <th>English for Work</th>
-            <th>4</th>
-            <th>Ei kai it:llä opiskele kukaa joka ei osais jo riittävällä tasolla enkku?</th>
-        </tr>
-        <tr>
-            <th>Webteknologiat</th>
-            <th>5</th>
-            <th>Helppoo tavaraa, kulmakivi opinto</th>
-        </tr>
-        <tr>
-            <th>Olio-ohjelmoinnin perusteet</th>
-            <th>5</th>
-            <th>Tähän mennessä haastavin kurssi, kulmakivi opinto</th>
-        </tr>
-        <tr>
-            <th>Liike-elämän matematiikka</th>
-            <th>4</th>
-            <th>Uskosin et haastava niille joilla ei ole matikka päätä</th>
-        </tr>
-        <tr>
-            <th>Yrittäjyys ja innovaatioiden kaupallistaminen</th>
-            <th>4</th>
-            <th>Lähtökohtasesti suht hyödytön jos yrittäjyys ei kiinnosta. Hyvä opettaja</th>
-        </tr>
-        <tr>
-            <th>Työvälineosaaminen</th>
-            <th>5</th>
-            <th>Hyvä niille, jotka ei osaa googlaa ms-officen ominaisuuksia taikka lähde linkauksen sääntöjä</th>
-        </tr>
-        <tr>
-            <th>Ryhmänedustaja</th>
-            <th>1 per vuosi</th>
-            <th>Vien ryhmän yhteistä palautetta eteenpäin, pyrin parantamaan oppimisympäristöä</th>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <span class="col1">Kurssin nimi</span>
+            <span class="col2">opintopisteet</span>
+            <span class="col3">Lyhyt mielipide parin viikon opetuken perusteella</span>
+        </div>
+        <div class="row">
+            <span class="col1">Ammatilline kasvu 1</span>
+            <span class="col2">1</span>
+            <span class="col3">Aika turha kurssi jos opinnot etenee hyvin</span>
+        </div>
+        <div class="row">
+            <span class="col1">English for Work</span>
+            <span class="col2">4</span>
+            <span class="col3">Ei kai it:llä opiskele kukaa joka ei osais jo riittävällä tasolla enkku?</span>
+        </div>
+        <div class="row">
+            <span class="col1">Webteknologiat</span>
+            <span class="col2">5</span>
+            <span class="col3">Helppoo tavaraa, kulmakivi opinto</span>
+        </div>
+        <div class="row">
+            <span class="col1">Olio-ohjelmoinnin perusteet</span>
+            <span class="col2">5</span>
+            <span class="col3">Tähän mennessä haastavin kurssi, kulmakivi opinto</span>
+        </div>
+        <div class="row">
+            <span class="col1">Liike-elämän matematiikka</span>
+            <span class="col2">4</span>
+            <span class="col3">Uskosin et haastava niille joilla ei ole matikka päätä</span>
+        </div>
+        <div class="row">
+            <span class="col1">Yrittäjyys ja innovaatioiden kaupallistaminen</span>
+            <span class="col2">4</span>
+            <span class="col3">Lähtökohtasesti suht hyödytön jos yrittäjyys ei kiinnosta. Hyvä opettaja</span>
+        </div>
+        <div class="row">
+            <span class="col1">Työvälineosaaminen</span>
+            <span class="col2">5</span>
+            <span class="col3">Hyvä niille, jotka ei osaa googlaa ms-officen ominaisuuksia taikka lähde linkauksen
+                sääntöjä</span>
+        </div>
+        <div class="row">
+            <span class="col1">Ryhmänedustaja</span>
+            <span class="col2">1 per vuosi</span>
+            <span class="col3">Vien ryhmän yhteistä palautetta eteenpäin, pyrin parantamaan oppimisympäristöä</span>
+        </div>
+    </div>
+
     <hr>
     <h2>Omat kuvaukset käydyistä kursseista:</h2>
 
