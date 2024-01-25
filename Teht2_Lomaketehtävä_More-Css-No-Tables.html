@@ -4,11 +4,7 @@
 <head>
     <title>Lomake</title>
     <style>
-        body {
-            text-align: left;
-        }
-
-        span {
+        .main {
             display: inline-block;
             width: 525px;
         }
@@ -29,51 +25,85 @@
             padding-top: 5px;
             padding-bottom: 5px;
         }
+
+        .row,
+        .row2,
+        .row3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        .row2 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .row3 {
+            padding-bottom: 5px;
+        }
+
+        .col1 {
+            display: inline block;
+            width: 80px;
+        }
+
+        .col2 {
+            display: inline block;
+            width: 220px;
+        }
+
+        .col3 {
+            display: inline block;
+            width: auto;
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <span>
-            <form>
+    <div class="main">
+        <form>
+            <div>
                 <fieldset>
                     <legend>Contact information:</legend>
-                    <table>
-                        <tr>
-                            <td><label for="fname">First name:</label></td>
-                            <td><input type="text" id="fname" name="fname" size="25"></td>
-                            <td>Preferred contact method:</td>
-                        </tr>
-                        <tr>
-                            <td><label for="fname">Last name:</label></td>
-                            <td><input type="text" id="lname" name="lname" size="25"></td>
-                            <td><input type="checkbox" id="prefEmail" name="prefEmail">&emsp;<label for="prefEmail">
-                                    Email</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email:</label></td>
-                            <td><input type="email" id="email" name="email" size="25"></td>
-                            <td><input type="checkbox" id="prefTele" name="prefTele">&emsp;<label for="prefTele">
-                                    Telephone</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="tele">Telephone:</label></td>
-                            <td><input type="text" id="tele" name="tele" size="25"></td>
-                        </tr>
-                    </table>
+                    <div class="row">
+                        <span class="col1"><label for="fname">First name:</label></span>
+                        <span class="col2"><input type="text" id="fname" name="fname" size="25"></span>
+                        <span class="col3">Preferred contact method:</span>
+                    </div>
+                    <div class="row2">
+                        <span class="col1"><label for="fname">Last name:</label></span>
+                        <span class="col2"><input type="text" id="lname" name="lname" size="25"></span>
+                        <span class="col3"><input type="checkbox" id="prefEmail" name="prefEmail">&emsp;<label
+                                for="prefEmail">
+                                Email</label>
+                        </span>
+                    </div>
+                    <div class="row3">
+                        <span class="col1"><label for="email">Email:</label></span>
+                        <span class="col2"><input type="email" id="email" name="email" size="25"></span>
+                        <span class="col3"><input type="checkbox" id="prefTele" name="prefTele">&emsp;<label
+                                for="prefTele">
+                                Telephone</label>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col1"><label for="tele">Telephone:</label></span>
+                        <span class="col2"><input type="text" id="tele" name="tele" size="25"></span>
+                        <span class="col3"></span>
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <legend class="margin">Feedback:</legend>
-                    <label for="subject">Message subject: </label><input type="text" id="subject" name="subject"
-                        size="25" class="margin"><br>
-                    <textarea name="message" rows="15" cols="55"></textarea><br>
-                    Attach a file: &emsp; <input type="file" id="myFile" name="filename"><br>
-                    <input type="submit" value="Send" class="margin">
-                </fieldset>
-            </form>
-        </span>
+            </div>
+            <fieldset>
+                <legend class="margin">Feedback:</legend>
+                <label for="subject">Message subject: </label><input type="text" id="subject" name="subject" size="25"
+                    class="margin"><br>
+                <textarea name="message" rows="15" cols="55"></textarea><br>
+                Attach a file: &emsp; <input type="file" id="myFile" name="filename"><br>
+                <input type="submit" value="Send" class="margin">
+            </fieldset>
+        </form>
     </div>
 </body>
 
