@@ -1,0 +1,20 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    border: 2px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    border-style: dotted;
+    background-color: antiquewhite;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 500px;
+    min-width: 400px;
+}
