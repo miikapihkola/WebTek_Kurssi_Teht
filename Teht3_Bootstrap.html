@@ -2,12 +2,65 @@
 <html lang="en">
 
 <head>
+    <meta charset="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Html Tutorial</title>
     <link type="text/css" rel="stylesheet" href="css\Teht3_Bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/example-bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <a href="MainMenu.html">Back to Mainmenu</a><br><br>
+    <nav class="navbar sticky-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Teht3 Bootstrap Osa 2
+            </a>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teht1
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6>&emsp;Teht1_HTML</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="Teht1_HTML.html">W/ Tables</a></li>
+                            <li><a class="dropdown-item" href="Teht1_HTML_More-Css-No-Tables.html">W/ Css</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teht2
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6>&emsp;Teht2_Lomake</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="Teht2_Lomaketehtävä.html">W/ Mixed</a></li>
+                            <li><a class="dropdown-item" href="Teht2_Lomaketehtävä_Less-Css-More-Tables.html">W/
+                                    Tables</a></li>
+                            <li><a class="dropdown-item" href="Teht2_Lomaketehtävä_More-Css-No-Tables.html">W/ Css</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainMenu.html">Crude Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
